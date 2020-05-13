@@ -22,7 +22,7 @@ Resuming can be done by pressing p or escape again or by clicking the Resume but
 ![](Resume.gif)
 
 ### Returning to Main Menu
-Returning to main menu by clicking the Resume button in pause menu.
+Returning to main menu by clicking the Main Menu button in pause menu.
 
 
 ![](Main-Menu.gif)
