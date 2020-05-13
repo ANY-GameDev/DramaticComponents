@@ -12,7 +12,7 @@ When pause menu is activated, there are two buttons. for each button we added an
 Finaly, we adden an animation to the pause menu, to make the transition smoother. We changed the animator updating mode to unscaled time so it will not stop when we pause because we set the scaleTime to zero.
 
 
-We needed to change in existing scripts: in both [enemy](/Assets/Script/Enemy.cs) and [laser](/Assets/Script/Laser.cs) part of calculating position used the unscaledDeltaTime. this caused a problem where setting the timescale to zero was not stopping the rotation of the cows and the instantiation of the lasers. So, instead, we used the deltaTime which fixed it. To fix the rotation problem, we multiplied the calculation with the timescale variable.
+We needed to change in existing scripts: in both [enemy](/Assets/Script/Enemy.cs) and [laser](/Assets/Script/Laser.cs) part of calculating position used the unscaledDeltaTime. this caused a problem where setting the timescale to zero was not stopping the movement of the cows and the instantiation of the lasers. So, instead, we used the deltaTime which fixed it. Another problem was the rotation of the cows, it was not stopping when the game was paused. To fix this, we multiplied the rotation calculation with the timescale variable.
 
 
 ### Resuming
